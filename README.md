@@ -21,3 +21,11 @@ gpio=20,21,26=op,dl
 gpio=4=op,dl
 
 ```
+
+
+Install the daemon:
+
+
+```
+sudo apt-get install smstools
+```
