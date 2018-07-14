@@ -39,3 +39,12 @@ incoming = yes
 baudrate = 19200
 eventhandler = /home/pi/log.sh
 ```
+
+
+Install the parser for the sms messages:
+
+
+```
+sudo apt-get install formail
+```
+
