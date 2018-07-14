@@ -48,3 +48,19 @@ Install the parser for the sms messages:
 sudo apt-get install formail
 ```
 
+
+log.sh
+```
+#!/bin/sh
+# This is an example how to use an eventhandler with smsd.
+
+#run this script only when a message was received.
+if [ "$1" != "RECEIVED" ]; then exit; fi;
+
+#Extract data from the SMS file
+SENDER=`formail -zx From: < $2`
+TEXT=`formail -I "" <$2 | sed -e"1d"`
+
+echo "from: $SENDER"  >> /home/pi/log.txt
+echo "sms: $TEXT"  >> /home/pi/log.txt
+```
