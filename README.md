@@ -29,3 +29,13 @@ Install the daemon:
 ```
 sudo apt-get install smstools
 ```
+
+Edit the config file at /etc/smsd.conf
+
+```
+[GSM1]
+device = /dev/serial0 
+incoming = yes
+baudrate = 19200
+eventhandler = /home/pi/log.sh
+```
