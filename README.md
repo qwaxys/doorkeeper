@@ -73,7 +73,8 @@ sudo apt-get update -y && sudo apt-get dist-upgrade -y && sudo apt-get autoclean
 ```
 next up install LAMP:
 ```
-sudo apt-get install apache2 php7.0 mariadb-server-10.1
+sudo apt-get install apache2 php7.0 mariadb-server
+sudo mysql_secure_installation
 ```
 Then PHPmyAdmin:
 ```
