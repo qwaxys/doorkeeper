@@ -8,6 +8,7 @@ Add the following to config.txt
 #############################  
 
 #  Bluetooth on the software serial and the PGIO pins to the dedicated Serial
+#  (optional)
 dtoverlay=pi3-miniuart-bt
 
 # Enable serial pins
