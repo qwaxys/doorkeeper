@@ -72,8 +72,9 @@ First off, update everything, you'll need to be running this in bash or over SSH
 sudo apt-get update -y && sudo apt-get dist-upgrade -y && sudo apt-get autoclean && sudo apt-get autoremove
 ```
 next up install LAMP:
-
-sudo apt-get install apache2 php7.0 mariadb-server-10.1 
+```
+sudo apt-get install apache2 php7.0 mariadb-server-10.1
+```
 Then PHPmyAdmin:
 ```
 sudo apt-get install phpmyadmin
